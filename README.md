@@ -17,15 +17,17 @@ This project demonstrates a simple two-tier architecture where a Flask web appli
 ### Prerequisites
 - Docker
 - Docker Compose
+  
 
-### Clone the Repository
+## Clone the Repository
 git clone https://github.com/your-username/two-tier-flask-app.git
+
 cd two-tier-flask-app
 
 ## Build & Run the App
 docker-compose up --build
 
-This will:
+#This will:
  * Build the Flask app image.
  * Start a MySQL container with initialized database and table.
  * Launch the Flask app and connect it to MySQL.
@@ -34,26 +36,38 @@ This will:
 docker ps
 
 ##Access the Application
+
 http://localhost:5001
 
 ## 🧪 MySQL Access
 docker exec -it mysql mysql -uadmin -padmin devops
 
 Then inside the MySQL shell:
+
 SHOW TABLES;
+
 SELECT * FROM messages;
 
-🔧 Environment Variables
+##🔧 Environment Variables
+
 Defined in docker-compose.yml:
+
 MYSQL_DATABASE: devops
+
 MYSQL_USER: admin
+
 MYSQL_PASSWORD: admin
+
 MYSQL_ROOT_PASSWORD: root
 
-🧹 Cleanup
+
+##🧹 Cleanup
+
 To stop and remove containers:
+
 docker-compose down
 
-📬 Contact
+##📬 Contact
+
 For questions, reach out at singhvikas180196@gmail.com
 
