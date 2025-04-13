@@ -27,7 +27,7 @@ cd two-tier-flask-app
 ## Build & Run the App
 docker-compose up --build
 
-#This will:
+# This will:
  * Build the Flask app image.
  * Start a MySQL container with initialized database and table.
  * Launch the Flask app and connect it to MySQL.
@@ -35,7 +35,7 @@ docker-compose up --build
 ## Check Running Containers
 docker ps
 
-##Access the Application
+## Access the Application
 
 http://localhost:5001
 
@@ -48,7 +48,7 @@ SHOW TABLES;
 
 SELECT * FROM messages;
 
-##🔧 Environment Variables
+## 🔧 Environment Variables
 
 Defined in docker-compose.yml:
 
@@ -61,13 +61,13 @@ MYSQL_PASSWORD: admin
 MYSQL_ROOT_PASSWORD: root
 
 
-##🧹 Cleanup
+## 🧹 Cleanup
 
 To stop and remove containers:
 
 docker-compose down
 
-##📬 Contact
+## 📬 Contact
 
 For questions, reach out at singhvikas180196@gmail.com
 
