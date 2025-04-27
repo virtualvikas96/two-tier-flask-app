@@ -20,7 +20,7 @@ This project demonstrates a simple two-tier architecture where a Flask web appli
   
 
 ## Clone the Repository
-git clone https://github.com/your-username/two-tier-flask-app.git
+git clone https://github.com/virtualvikas96/two-tier-flask-app.git
 
 cd two-tier-flask-app
 
